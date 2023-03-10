@@ -4,6 +4,7 @@ export default function Banner() {
   return (
     <>
       <div className={bannerStyle.container}>
+        <div className={bannerStyle.content}>
         <div className={bannerStyle.left}>
           <div className={bannerStyle.heading}>
             <h1 className={bannerStyle.heading1}>Export Custom</h1>
@@ -38,7 +39,10 @@ export default function Banner() {
               </p>
             </div>
           </div>
+          <div className={bannerStyle.btnDiv}>
           <button className={bannerStyle.btn}>Get In Touch</button>
+          </div>
+          {/* <button className={bannerStyle.btn}>Get In Touch</button> */}
           <div className={bannerStyle.meeting}>
             <img src="meeting.png" alt="" />
             <p>
@@ -52,6 +56,7 @@ export default function Banner() {
             src="https://6sensehq.com/wp-content/uploads/2023/02/6sense.png"
             alt=""
           />
+        </div>
         </div>
       </div>
       <div className={bannerStyle.bottom}>

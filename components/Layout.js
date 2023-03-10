@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Banner from './Banner';
+import CompanyDescription from './CompanyDescription';
 
 export default function Layout() {
   return (
@@ -13,6 +14,7 @@ export default function Layout() {
       </Head>
       <Navbar></Navbar>
       <Banner></Banner>
+      <CompanyDescription></CompanyDescription>
     </>
   );
 }

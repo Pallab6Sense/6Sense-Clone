@@ -7,18 +7,37 @@
     flex-direction: col;
     /* width: 100%; */
 }
-
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 .left {
-    flex-basis: 49%;
+    /* flex-basis: 49%; */
+    /* margin-top: 30px;; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right {
-    flex-basis: 49%;
-}
+    /* flex-basis: 49%;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 
 .right img {
     width: 40rem;
     height: 30rem;
+    /* padding-left: 80px; */
 }
 
 .left .heading {
@@ -42,8 +61,15 @@
     margin-top: 10px;
 }
 
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .listItem {
     display: flex;
+    /* justify-content: center; */
     margin-top: 15px;
     font-size: 17px;
 }
@@ -55,7 +81,12 @@
 .listItem span {
     font-weight: bold;
 }
-
+.btnDiv{
+    display: flex;
+    justify-content: flex-start;
+    /* margin-right: 30px; */
+    margin-top: 20px;
+}
 .btn {
     font-family: Arial;
     color: #ffffff;
@@ -79,6 +110,7 @@
 .meeting{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     font-size: 20px;
     margin-top: 10px;
     /* width: 100%; */
@@ -119,13 +151,13 @@
     padding-left: 20px;
     font-size: 18px;
 }
-@media (max-width: 425px) {
+@media (max-width: 770px) {
     .container {
         background-color: #F8F4EC;
         display: flex;
         /* flex-direction: row-reverse; */
-        justify-items: center;
-        align-items: center;
+        justify-content: center;
+        align-content: center;
         padding-top: 0px;
         padding-left: 0px;
         padding-bottom: 0px;
@@ -133,18 +165,44 @@
         width: 100%;
         padding-top: 30px;
     }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+    }
+    .heading{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
 
     .right img {
         width: 280px !important;
         height: 230px !important;
         justify-content: center;
-        padding-left: 20px;
-        padding-top: 15px;
+        padding-left: 0px;
+        padding-top: 0px;
     }
     .left .heading{
         justify-content: center;
-        padding-left: 18px;
-        /* display: flex; */
+        align-content: center;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
         /* flex-wrap: wrap; */
         justify-content: center;
         width: 100%;
@@ -154,10 +212,10 @@
         /* justify-items: center; */
         /* background-color: red; */
         /* padding: 0px 0px 10px; */
-        padding-right: 0px;
-        padding-left: 0px;
+        padding-right: 30px;
+        padding-left: 60px;
         /* width: fit-content; */
-        font-size: 26px;
+        font-size: 35px;
     }
 
     .heading2 {
@@ -169,28 +227,71 @@
         /* width: fit-content; */
         /* font-size: 30px; */
         text-align: center;
-        margin-top: 8px;
-        font-size: 30px;
+        margin-top: 0px;
+        font-size: 39px;
     }
 
-    
+    .heading p {
+        color: #17494d;
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 27px;
+    }
 
+    .list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* font-size: 11px; */
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+    
+    .listItem {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .listItem p{
+        height: 20px;
+    }
+    .btnDiv{
+        display: flex;
+        justify-content: center;
+        /* margin-right: 30px; */
+    }
     .btn {
         font-family: Arial;
         color: #ffffff;
         font-size: 18px;
         background: #ba8d46;
-        padding: 5px 10px 5px 10px;
+        padding: 20px 50px 20px 50px;
         text-decoration: none;
         border: none;
         /* margin-right: 120px; */
         /* margin-left: 100px; */
         margin-top: 20px;
-        width: fit-content;
+        /* width: fit-content; */
         font-weight: bold;
         text-align: center;
         width:100%;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+
+    .meeting{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        /* width: 100%; */
+    }
+
     .bottomItems{
         margin-left: 0px;
         /* margin-right: 120px; */
@@ -215,4 +316,5 @@
         flex-wrap: wrap;
     
     }
+    
 }
