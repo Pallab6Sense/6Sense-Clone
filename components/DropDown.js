@@ -1,41 +1,44 @@
 /* eslint-disable @next/next/no-img-element */
-import * as React from 'react';
-
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import dropdownStyle from '../styles/DropDown.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function DropDown() {
   const [iscollapse, setIsCollapse] = useState(true);
   const [iscollapse1, setIsCollapse1] = useState(false);
   const [iscollapse2, setIsCollapse2] = useState(false);
 
-  function handleClick() {
+  let handleClick;
+
+  handleClick = useCallback(() => {
     if (iscollapse == true) {
     } else {
       setIsCollapse(true);
       setIsCollapse1(false);
       setIsCollapse2(false);
     }
-  }
+  }, [iscollapse]);
 
-  function handleClick1() {
+  let handleClick1;
+
+  handleClick1 = useCallback(() => {
     if (iscollapse1 == true) {
     } else {
       setIsCollapse1(true);
       setIsCollapse(false);
       setIsCollapse2(false);
     }
-  }
+  }, [iscollapse1]);
 
-  function handleClick2() {
+  let handleClick2;
+
+  handleClick2 = useCallback(() => {
     if (iscollapse2 == true) {
     } else {
       setIsCollapse2(true);
       setIsCollapse1(false);
       setIsCollapse(false);
     }
-  }
+  }, [iscollapse2]);
 
   return (
     <>
@@ -76,7 +79,8 @@ export default function DropDown() {
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick1}>
-                  Ability to integrate with existing systems and processes <span>&or;</span>
+                  Ability to integrate with existing systems and processes{' '}
+                  <span>&or;</span>
                 </p>
                 {iscollapse1 && (
                   <p className={dropdownStyle.description}>
