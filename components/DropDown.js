@@ -10,8 +10,7 @@ export default function DropDown() {
   let handleClick;
 
   handleClick = useCallback(() => {
-    if (iscollapse == true) {
-    } else {
+    if (iscollapse == false) {
       setIsCollapse(true);
       setIsCollapse1(false);
       setIsCollapse2(false);
@@ -21,8 +20,7 @@ export default function DropDown() {
   let handleClick1;
 
   handleClick1 = useCallback(() => {
-    if (iscollapse1 == true) {
-    } else {
+    if (iscollapse1 == false) {
       setIsCollapse1(true);
       setIsCollapse(false);
       setIsCollapse2(false);
@@ -32,8 +30,7 @@ export default function DropDown() {
   let handleClick2;
 
   handleClick2 = useCallback(() => {
-    if (iscollapse2 == true) {
-    } else {
+    if (iscollapse2 == false) {
       setIsCollapse2(true);
       setIsCollapse1(false);
       setIsCollapse(false);
@@ -60,7 +57,6 @@ export default function DropDown() {
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick}>
                   Cost Savings By 50% <span>&or;</span>
-                  <i class="fa-solid fa-chevron-down"></i>
                 </p>
                 {iscollapse && (
                   <p className={dropdownStyle.description}>
