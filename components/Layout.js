@@ -4,6 +4,7 @@ import Banner from './Banner';
 import CompanyDescription from './CompanyDescription';
 import DropDown from './DropDown';
 import ContactInfo from './ContactInfo';
+import PartnershipWork from './PartnershipWork';
 
 export default function Layout() {
   return (
@@ -23,12 +24,13 @@ export default function Layout() {
       </header>
 
       <main>
-        <Banner></Banner>
-        <CompanyDescription></CompanyDescription>
-        <DropDown></DropDown>
-        <ContactInfo></ContactInfo>
+        <Banner />
+        <CompanyDescription />
+        <DropDown />
+        <ContactInfo />
+        <PartnershipWork></PartnershipWork>
       </main>
-      
+
       <footer></footer>
     </>
   );
