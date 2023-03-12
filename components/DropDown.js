@@ -17,7 +17,7 @@ export default function DropDown() {
     }
   }, [iscollapse]);
 
-  let handleClick1;
+  let handleClick1; 
 
   handleClick1 = useCallback(() => {
     if (iscollapse1 == false) {
