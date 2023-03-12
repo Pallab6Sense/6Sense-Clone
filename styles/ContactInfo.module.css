@@ -1,0 +1,233 @@
+.container {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f8f4ec;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    /* Primary */
+
+    color: #17494D;
+}
+
+.left span {
+    color: #BA8D46;
+}
+
+.subHeading {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    /* identical to box height, or 29px */
+
+    letter-spacing: 0.02em;
+
+    /* Text Black */
+
+    color: #222222;
+
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* padding-top: 60px; */
+}
+
+.getInTouch {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    background: #ba8d46;
+    padding: 15px 120px 15px 120px;
+    text-decoration: none;
+    border: none;
+    /* margin-right: 120px; */
+    /* margin-left: 100px; */
+    margin-top: 20px;
+    width: fit-content;
+    font-weight: bold;
+    text-align: center;
+    /* width:100%; */
+    margin-right: 50px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.meeting {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    margin-top: 10px;
+    /* width: 100%; */
+}
+
+.meeting p {
+    color: #17494d;
+}
+
+.meeting span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.meeting p:hover {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width: 770px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #f8f4ec;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .left {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .heading {
+        font-family: 'IBM Plex Sans Thai';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 109%;
+        /* or 39px */
+
+        text-align: center;
+        text-transform: capitalize;
+
+        /* Primary */
+
+        color: #17494D;
+    }
+
+    .left span {
+        color: #BA8D46;
+    }
+
+    .subHeading {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        /* or 26px */
+
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        /* Text Black */
+
+        color: #222222;
+
+        text-align: center;
+    }
+
+    .right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 60px;
+        flex-direction: column;
+    }
+
+    .btn {
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 15px;
+        background: #ba8d46;
+        padding: 15px 120px 15px 120px;
+        text-decoration: none;
+        border: none;
+        /* margin-right: 120px; */
+        /* margin-left: 100px; */
+        margin-top: -19px;
+        width: 100%;
+        font-weight: bold;
+        text-align: left;
+        /* width:100%; */
+        margin-right: 0px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+    }
+
+    .meeting {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 17px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /* width: 100%; */
+    }
+
+    .meeting p {
+        color: #17494d;
+    }
+
+    .meeting span {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .meeting p:hover {
+        cursor: pointer;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}

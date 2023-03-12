@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Banner from './Banner';
 import CompanyDescription from './CompanyDescription';
 import DropDown from './DropDown';
+import ContactInfo from './ContactInfo';
 
 export default function Layout() {
   return (
@@ -17,6 +18,7 @@ export default function Layout() {
       <Banner></Banner>
       <CompanyDescription></CompanyDescription>
       <DropDown></DropDown>
+      <ContactInfo></ContactInfo>
     </>
   );
 }
