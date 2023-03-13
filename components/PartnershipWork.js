@@ -2,15 +2,17 @@
 // import axios from 'axios';
 import { useEffect, useState } from 'react';
 import style from '../styles/PartnershipWork.module.css';
+import Usefetch from './UseFetch';
 
 export default function PartnershipWork() {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch(`http://localhost:8000/works`)
-      .then((response) => response.json())
-      .then((actualData) => setData(actualData));
-  }, []);
+  // useEffect(() => {
+  //   fetch(`http://localhost:8000/works`)
+  //     .then((response) => response.json())
+  //     .then((actualData) => setData(actualData));
+  // }, []);
+  const { data: data } = Usefetch('http://localhost:8000/works');
   return (
     <>
       <div className={style.container}>
@@ -24,20 +26,21 @@ export default function PartnershipWork() {
           </p>
         </div>
         <div className={style.works}>
-          {data && data.map((items) => {
-            const { id, img, logo, description } = items;
-            return (
-              <div className={style.worksItems} key={id}>
-                <div className={style.mainImage}>
-                  <img src={img} alt="" />
+          {data &&
+            data.map((items) => {
+              const { id, img, logo, description } = items;
+              return (
+                <div className={style.worksItems} key={id}>
+                  <div className={style.mainImage}>
+                    <img src={img} alt="" />
+                  </div>
+                  <div className={style.desc}>
+                    <img src={logo} alt="" />
+                    <p>{description}</p>
+                  </div>
                 </div>
-                <div className={style.desc}>
-                  <img src={logo} alt="" />
-                  <p>{description}</p>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
       </div>
     </>
