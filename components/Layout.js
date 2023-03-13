@@ -30,6 +30,8 @@ export default function Layout() {
       <ContactInfo />
       <PartnershipWork />
       <Quote />
+      <ContactInfo />
+
     </main>
 
     <footer></footer>

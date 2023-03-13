@@ -2,6 +2,7 @@
 // import axios from 'axios';
 import { useEffect, useState } from 'react';
 import style from '../styles/PartnershipWork.module.css';
+
 export default function PartnershipWork() {
   const [data, setData] = useState([]);
 
@@ -23,12 +24,12 @@ export default function PartnershipWork() {
           </p>
         </div>
         <div className={style.works}>
-          {data.map((items) => {
+          {data && data.map((items) => {
             const { id, img, logo, description } = items;
             return (
               <div className={style.worksItems} key={id}>
                 <div className={style.mainImage}>
-                <img src={img} alt="" />
+                  <img src={img} alt="" />
                 </div>
                 <div className={style.desc}>
                   <img src={logo} alt="" />
