@@ -5,6 +5,8 @@ export default function Questions() {
   const [iscollapse, setIsCollapse] = useState(true);
   const [iscollapse1, setIsCollapse1] = useState(false);
   const [iscollapse2, setIsCollapse2] = useState(false);
+  const [iscollapse3, setIsCollapse3] = useState(false);
+  const [iscollapse4, setIsCollapse4] = useState(false);
 
   let handleClick;
 
@@ -13,6 +15,8 @@ export default function Questions() {
       setIsCollapse(true);
       setIsCollapse1(false);
       setIsCollapse2(false);
+      setIsCollapse3(false);
+      setIsCollapse4(false);
     }
   }, [iscollapse]);
 
@@ -23,6 +27,8 @@ export default function Questions() {
       setIsCollapse1(true);
       setIsCollapse(false);
       setIsCollapse2(false);
+      setIsCollapse3(false);
+      setIsCollapse4(false);
     }
   }, [iscollapse1]);
 
@@ -33,8 +39,32 @@ export default function Questions() {
       setIsCollapse2(true);
       setIsCollapse1(false);
       setIsCollapse(false);
+      setIsCollapse3(false);
+      setIsCollapse4(false);
     }
   }, [iscollapse2]);
+  let handleClick3;
+
+  handleClick3 = useCallback(() => {
+    if (iscollapse3 == false) {
+      setIsCollapse3(true);
+      setIsCollapse(false);
+      setIsCollapse1(false);
+      setIsCollapse2(false);
+      setIsCollapse4(false);
+    }
+  }, [iscollapse3]);
+  let handleClick4;
+
+  handleClick4 = useCallback(() => {
+    if (iscollapse4 == false) {
+      setIsCollapse4(true);
+      setIsCollapse(false);
+      setIsCollapse1(false);
+      setIsCollapse2(false);
+      setIsCollapse3(false);
+    }
+  }, [iscollapse4]);
 
   return (
     <>
@@ -91,6 +121,40 @@ export default function Questions() {
                   Improved data management <span>&or;</span>
                 </p>
                 {iscollapse2 && (
+                  <p className={dropdownStyle.description}>
+                    By designing software that fits the specific workflow and
+                    processes of the client, we can help streamline data entry
+                    and organization, making it easier to access and use. In
+                    addition, our custom software can be designed with robust
+                    security measures in place to protect sensitive data and
+                    prevent unauthorized access.
+                  </p>
+                )}
+              </div>
+            </div>
+            <div className={dropdownStyle.collapseItem}>
+              <div className={dropdownStyle.items}>
+                <p className={dropdownStyle.head} onClick={handleClick3}>
+                  Improved data management <span>&or;</span>
+                </p>
+                {iscollapse3 && (
+                  <p className={dropdownStyle.description}>
+                    By designing software that fits the specific workflow and
+                    processes of the client, we can help streamline data entry
+                    and organization, making it easier to access and use. In
+                    addition, our custom software can be designed with robust
+                    security measures in place to protect sensitive data and
+                    prevent unauthorized access.
+                  </p>
+                )}
+              </div>
+            </div>
+            <div className={dropdownStyle.collapseItem}>
+              <div className={dropdownStyle.items}>
+                <p className={dropdownStyle.head} onClick={handleClick4}>
+                  Improved data management <span>&or;</span>
+                </p>
+                {iscollapse4 && (
                   <p className={dropdownStyle.description}>
                     By designing software that fits the specific workflow and
                     processes of the client, we can help streamline data entry

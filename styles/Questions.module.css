@@ -6,7 +6,7 @@
     justify-content: center;
     flex-direction: column;
     padding-bottom: 20px;
-    background: linear-gradient(180deg, #F8FFE9 0%, rgba(248, 255, 233, 0) 50%);
+    background: linear-gradient(180deg, #F8FFE9 0%, rgba(248, 255, 233, 0) 30%);
 }
 
 .heading {
@@ -48,6 +48,8 @@
     padding-right: 90px;
     padding-top: 50px;
     /* width: 100%; */
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .collapseDiv {
@@ -86,7 +88,7 @@
 }
 
 
-.head span{
+.head span {
     float: right;
 }
 
@@ -159,12 +161,12 @@
     .collapse {
         display: flex;
         justify-content: center;
-        padding-left: 0px;
-        padding-right: 0px;
         padding-top: 50px;
         flex-direction: column;
         padding-left: 15px;
         padding-right: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
 
     }
 
@@ -198,10 +200,10 @@
         line-height: 25px;
         /* identical to box height */
         padding-bottom: 5px;
-        
-        
+
+
         /* Primary */
-        
+
         color: #17494D;
     }
 
