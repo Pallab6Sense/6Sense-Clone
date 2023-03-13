@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import style from '../styles/MobileApp.module.css';
-import Usefetch from './UseFetch';
+import Usefetch from '../Hooks/UseFetch';
 export default function MobileApp() {
   const { data: data } = Usefetch('http://localhost:5000/MobileWorks');
   console.log(data);
@@ -24,13 +24,11 @@ export default function MobileApp() {
             return (
               <div className={style.items} key={id}>
                 <div className={style.image}>
-                <img src={img} alt="" />
-
+                  <img src={img} alt="" />
                 </div>
                 <hr />
                 <div className={style.description}>
-                <p>{description}</p>
-
+                  <p>{description}</p>
                 </div>
               </div>
             );

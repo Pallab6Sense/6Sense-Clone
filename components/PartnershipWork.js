@@ -2,7 +2,7 @@
 // import axios from 'axios';
 import { useEffect, useState } from 'react';
 import style from '../styles/PartnershipWork.module.css';
-import Usefetch from './UseFetch';
+import Usefetch from '../Hooks/UseFetch';
 
 export default function PartnershipWork() {
   // const [data, setData] = useState([]);
