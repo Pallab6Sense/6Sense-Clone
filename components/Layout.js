@@ -6,6 +6,7 @@ import DropDown from './DropDown';
 import ContactInfo from './ContactInfo';
 import PartnershipWork from './PartnershipWork';
 import Quote from './Quote';
+import MobileApp from './MobileApp';
 
 export default function Layout() {
   return <>
@@ -31,7 +32,7 @@ export default function Layout() {
       <PartnershipWork />
       <Quote />
       <ContactInfo />
-
+      <MobileApp />
     </main>
 
     <footer></footer>
