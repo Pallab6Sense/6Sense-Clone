@@ -7,6 +7,7 @@ import ContactInfo from './ContactInfo';
 import PartnershipWork from './PartnershipWork';
 import Quote from './Quote';
 import MobileApp from './MobileApp';
+import Questions from './Questions';
 
 export default function Layout() {
   return <>
@@ -33,6 +34,7 @@ export default function Layout() {
       <Quote />
       <ContactInfo />
       <MobileApp />
+      <Questions></Questions>
     </main>
 
     <footer></footer>

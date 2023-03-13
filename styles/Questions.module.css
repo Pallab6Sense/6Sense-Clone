@@ -1,0 +1,224 @@
+.container {
+    width: 100%;
+    /* height: 500px; */
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background: linear-gradient(180deg, #F8FFE9 0%, rgba(248, 255, 233, 0) 50%);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.advantages {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+
+    text-align: center;
+    color: #17494d;
+}
+
+.advantages span {
+    color: #BA8D46;
+}
+
+.desc {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #4e4e4e;
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    /* width: 100%; */
+}
+
+.collapseDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.collapseItem {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    height: fit-content;
+    padding-bottom: 15px;
+
+}
+
+.items {
+    text-align: justify;
+    padding: 25px;
+    border-top: 1px solid #17494D;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    width: 100%;
+}
+
+.head {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #17494D;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.head span{
+    float: right;
+}
+
+
+.description {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+}
+
+
+
+.rightImage {
+    width: 100%;
+}
+
+@media (max-width: 770px) {
+    .container {
+        width: 100%;
+        /* height: 500px; */
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .advantages {
+        font-family: 'IBM Plex Sans Thai';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 109%;
+        /* or 39px */
+
+        text-align: center;
+        color: #17494d;
+    }
+
+    .advantages span {
+        color: #BA8D46;
+    }
+
+    .desc {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        /* or 125% */
+
+        text-align: center;
+        color: #4e4e4e;
+        padding-top: 20px;
+    }
+
+    .collapse {
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 50px;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .collapseDiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .collapseItem {
+        display: flex;
+        justify-content: center;
+        background: #FFFFFF;
+        height: fit-content;
+        padding-bottom: 15px;
+
+    }
+
+    .items {
+        text-align: justify;
+        padding: 25px;
+        border-top: 1px solid #17494D;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .head {
+        font-family: 'IBM Plex Sans Thai';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        /* identical to box height */
+        padding-bottom: 5px;
+        
+        
+        /* Primary */
+        
+        color: #17494D;
+    }
+
+    .description {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+        text-align: justify;
+        letter-spacing: 0.2px;
+        color: #222222;
+    }
+
+    .rightImage img {
+        width: 95%;
+    }
+}
