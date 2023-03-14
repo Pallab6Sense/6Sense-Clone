@@ -172,7 +172,6 @@
   .container {
 
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 18px -6px;
     background: #ffffff;
     /* align-items: center; */
     font-size: 16px;
@@ -180,6 +179,8 @@
     /* text-align: start; */
     /* letter-spacing: normal; */
     max-height: fit-content;
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 2.0);
+
   }
 
   .container img {
@@ -240,7 +241,7 @@
   }
 
   .solid {
-    border-top: 1px solid #bbb;
+    border-top: 1px solid #e9dddd;
   }
 
   .ourServices {
