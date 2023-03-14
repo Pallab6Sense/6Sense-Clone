@@ -8,8 +8,9 @@ import PartnershipWork from './PartnershipWork';
 import Quote from './Quote';
 import MobileApp from './MobileApp';
 import Questions from './Questions';
-import BackTotop from './BackToTop';
+// import BackToTop from './BackToTop';
 import Footer from './Footer';
+import BackToTop from './BackToTop';
 
 export default function Layout() {
   return <>
@@ -42,6 +43,7 @@ export default function Layout() {
 
     <footer>
       <Footer />
+      <BackToTop />
     </footer>
   </>;
 }

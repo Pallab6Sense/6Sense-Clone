@@ -5,7 +5,7 @@ import ScrollToTop from 'react-scroll-to-top';
 export default function Footer() {
   return (
     <>
-      <ScrollToTop
+      {/* <ScrollToTop
         smooth
         top={200}
         svgPath="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
@@ -18,13 +18,17 @@ export default function Footer() {
           paddingRight: 20,
           paddingLeft: 20,
         }}
-      />
+      /> */}
       <div className={style.container}>
         <div className={style.left}>
+
+          <div className={style.image}>
           <img
             src="https://6sensehq.com/wp-content/uploads/2022/12/Charcoal.png"
             alt=""
           />
+          </div>
+          
           <p>Copyright 2023 ©6sense Technologies All rights reserved.</p>
         </div>
         <div className={style.Flex}>

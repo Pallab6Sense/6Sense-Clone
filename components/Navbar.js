@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image';
+import { useState } from 'react';
 import navStyle from '../styles/Navbar.module.css';
 export default function Navbar() {
+  const [popup, setPopup] = useState(false);
+  function handlePopup() {
+    if (popup === false) setPopup(true);
+    else setPopup(false);
+  }
   return (
     <>
       <div className={navStyle.container}>
@@ -24,7 +29,7 @@ export default function Navbar() {
           <a href="#home">Case Study</a>
           <div class={navStyle.dropdown}>
             <button class={navStyle.dropbtn}>
-              Our Services  
+              Our Services
               <i class="fa fa-caret-down"></i>
             </button>
             <div class={navStyle.dropdownContent}>
@@ -33,9 +38,31 @@ export default function Navbar() {
             </div>
           </div>
           <a href="#news">Our Process</a>
-        <button className={navStyle.contactUs}>Contact Us</button>
+          <button className={navStyle.contactUs}>Contact Us</button>
         </div>
 
+        <div className={navStyle.hamburger} onClick={handlePopup}>
+          <div className={navStyle.hamContent}></div>
+          <div className={navStyle.hamContent}></div>
+          <div className={navStyle.hamContent}></div>
+        </div>
+
+        {popup && (
+          <div className={navStyle.mobileNavbar}>
+            <div className={navStyle.navContent}>
+              <p>Case Study</p>
+              <p className={navStyle.bold}>
+                Our Services
+              </p>
+              <div className={navStyle.ourServices}>
+                <p>Design</p>
+                <hr className={navStyle.solid}/>
+                <p>Development</p>
+              </div>
+              <p>Our Process</p>
+            </div>
+          </div>
+        )}
       </div>
       {/* </div> */}
     </>

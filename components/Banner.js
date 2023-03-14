@@ -61,7 +61,7 @@ export default function Banner() {
       </div>
       <div className={bannerStyle.bottom}>
         <div className={bannerStyle.bottomItems}>
-          <div>
+          <div className={bannerStyle.logo}>
             <img src="vector-2.png" alt="" />
           </div>
           <div>
@@ -71,8 +71,8 @@ export default function Banner() {
           </div>
         </div>
         <div className={bannerStyle.bottomItems}>
-          <div className="">
-            <img src="Group-4.png" alt="" />
+          <div className={bannerStyle.logo}>
+            <img src="Group-4.png" alt="" className={bannerStyle.fix}/>
           </div>
           <div>
             <h1>200+</h1>
@@ -80,7 +80,7 @@ export default function Banner() {
           </div>
         </div>
         <div className={bannerStyle.bottomItems}>
-          <div className="">
+          <div className={bannerStyle.logo}>
             <img src="Group-1-1.png" alt="" />
           </div>
           <div>
@@ -89,7 +89,7 @@ export default function Banner() {
           </div>
         </div>
         <div className={bannerStyle.bottomItems}>
-          <div className="">
+          <div className={bannerStyle.logo}>
             <img src="image-42.png" alt="" />
           </div>
         </div>

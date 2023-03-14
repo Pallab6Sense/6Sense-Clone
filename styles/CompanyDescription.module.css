@@ -53,13 +53,16 @@
 .brandLogo {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
 
 }
 
 .image {
-    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .headingDiv2 {
@@ -723,7 +726,7 @@
         /* display: flex; */
         /* justify-content: center; */
         /* width: 100%; */
-        margin-top: 140px;
+        margin-top: 80px;
         font-size: 20px;
         font-weight: 700;
         text-align: center;
@@ -777,12 +780,18 @@
         align-content: center;
         justify-items: center;
         width: 100%;
+        object-fit: cover;
+
     }
 
-    .image {
-        width: 50%;
+    .image{
+        display: flex;
+        justify-content: center;
+        /* width: 50%; */
         padding-top: 20px;
         padding-right: 10px;
+        padding-right: 10px;
+        /* padding-bottom: -50px; */
     }
 
     .services {
@@ -793,6 +802,7 @@
         grid-template-rows: 300px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: -10px;
         /* grid-gap: 20px; */
 
     }
