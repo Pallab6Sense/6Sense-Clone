@@ -74,6 +74,7 @@
 
 .mainImage img{
     width: 100%;
+    object-fit: cover;
 }
 .desc {
     display: flex;

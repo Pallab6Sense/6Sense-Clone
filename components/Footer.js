@@ -38,6 +38,7 @@ export default function Footer() {
           </div>
           <div className={style.right}>
             <button className={style.fb}>f</button>
+            {/* <a className={style.fb} href="#">f</a> */}
             <button className={style.in}>in</button>
           </div>
         </div>
