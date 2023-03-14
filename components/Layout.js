@@ -8,6 +8,8 @@ import PartnershipWork from './PartnershipWork';
 import Quote from './Quote';
 import MobileApp from './MobileApp';
 import Questions from './Questions';
+import BackTotop from './BackToTop';
+import Footer from './Footer';
 
 export default function Layout() {
   return <>
@@ -26,6 +28,7 @@ export default function Layout() {
     </header>
 
     <main>
+      {/* <BackTotop /> */}
       <Banner />
       <CompanyDescription />
       <DropDown />
@@ -34,9 +37,11 @@ export default function Layout() {
       <Quote />
       <ContactInfo />
       <MobileApp />
-      <Questions></Questions>
+      <Questions />
     </main>
 
-    <footer></footer>
+    <footer>
+      <Footer />
+    </footer>
   </>;
 }
