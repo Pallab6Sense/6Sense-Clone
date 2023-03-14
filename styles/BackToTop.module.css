@@ -9,10 +9,10 @@
     border-radius: 10%;
     border: none;
     box-shadow: 0 5px 10px #ccc;
-    height: 33px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
+    height: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
 }
 
 .backToTop p {
