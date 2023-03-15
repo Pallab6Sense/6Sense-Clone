@@ -53,6 +53,7 @@
 .brandLogo {
     display: flex;
     justify-content: center;
+    
     margin-top: 50px;
     width: 100%;
 
@@ -61,14 +62,15 @@
 .image {
     display: flex;
     justify-content: center;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .headingDiv2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .heading2 {
@@ -774,24 +776,29 @@
 
     .brandLogo {
         display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
         justify-content: center;
         align-content: center;
-        justify-items: center;
-        width: 100%;
-        object-fit: cover;
+        /* justify-items: center; */
+        /* width: 100%; */
 
     }
 
     .image{
         display: flex;
         justify-content: center;
-        /* width: 50%; */
-        padding-top: 20px;
+        justify-items: center;
+        height: auto;
+        /* width: 100px; */
+        /* width: 80%; */
+        padding-top: 10px;
         padding-right: 10px;
-        padding-right: 10px;
+        padding-left: 10px;
         /* padding-bottom: -50px; */
+        object-fit:scale-down;
+        /* object-fit: cover; */
+
     }
 
     .services {
@@ -852,7 +859,7 @@
         margin-right: 20px;
         /* margin-bottom: 200px; */
         position: relative;
-        bottom: 3325px;
+        bottom: 3330px;
 
         box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.05);
         padding-left: 50px;
@@ -916,7 +923,7 @@
         grid-template-columns: 160px 60px;
         z-index: 1;
         position: relative;
-        bottom: 3435px;
+        bottom: 3440px;
     }
 
     .bottomItems {

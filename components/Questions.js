@@ -80,18 +80,11 @@ export default function Questions() {
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick}>
-                  Cost Savings By 50% <span>&or;</span>
+                What sets your software development company apart from competitors? <span>&or;</span>
                 </p>
                 {iscollapse && (
                   <p className={dropdownStyle.description}>
-                    By working with our custom software company, our clients can
-                    save at least 50% on their software development costs. Our
-                    personalized solutions are designed specifically for the
-                    needs and goals of each client, ensuring that they get the
-                    most value for their investment. We work closely with our
-                    clients to understand their unique needs and create software
-                    that fits their workflow and processes, helping to
-                    streamline operations and improve efficiency.
+                    Our team has extensive experience in custom software development and a strong track record of successfully delivering projects for businesses of all sizes. We also offer a range of services including web development, managed delivery, dedicated team options, and UX design, allowing us to be a one-stop shop for all of your software development needs.
                   </p>
                 )}
               </div>
@@ -99,18 +92,12 @@ export default function Questions() {
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick1}>
-                  Ability to integrate with existing systems and processes{' '}
+                Do you offer any guarantees for the quality of your work?{' '}
                   <span>&or;</span>
                 </p>
                 {iscollapse1 && (
                   <p className={dropdownStyle.description}>
-                    We have the ability to seamlessly integrate with our
-                    clients’ existing systems and processes. This means that our
-                    software can work alongside their current technology and
-                    platforms, rather than requiring them to completely overhaul
-                    their systems. This not only saves time and resources, but
-                    also helps to minimize disruptions to their business
-                    operations..
+                    Yes, we stand behind the quality of our work and offer a satisfaction guarantee for all of our projects. If you are not completely satisfied with the final product, we will work with you to make any necessary revisions until you are happy with the results.
                   </p>
                 )}
               </div>
@@ -118,16 +105,11 @@ export default function Questions() {
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick2}>
-                  Improved data management <span>&or;</span>
+                Can you accommodate businesses of any size? <span>&or;</span>
                 </p>
                 {iscollapse2 && (
                   <p className={dropdownStyle.description}>
-                    By designing software that fits the specific workflow and
-                    processes of the client, we can help streamline data entry
-                    and organization, making it easier to access and use. In
-                    addition, our custom software can be designed with robust
-                    security measures in place to protect sensitive data and
-                    prevent unauthorized access.
+                    Yes, we work with businesses of all sizes and have the resources and experience to handle projects of any scope. Whether you are a small startup or a large enterprise, we have the expertise to deliver custom software solutions that meet your specific needs.
                   </p>
                 )}
               </div>
@@ -135,16 +117,11 @@ export default function Questions() {
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick3}>
-                  Improved data management <span>&or;</span>
+                Do you offer ongoing support and maintenance for your software products? <span>&or;</span>
                 </p>
                 {iscollapse3 && (
                   <p className={dropdownStyle.description}>
-                    By designing software that fits the specific workflow and
-                    processes of the client, we can help streamline data entry
-                    and organization, making it easier to access and use. In
-                    addition, our custom software can be designed with robust
-                    security measures in place to protect sensitive data and
-                    prevent unauthorized access.
+                   Yes, we offer ongoing support and maintenance for all of our software products to ensure that they are running smoothly and meeting the needs of your business. We also offer managed delivery services to handle the ongoing maintenance and updates for your software, allowing you to focus on running your business.
                   </p>
                 )}
               </div>
@@ -152,16 +129,11 @@ export default function Questions() {
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick4}>
-                  Improved data management <span>&or;</span>
+                How do you ensure the security and confidentiality of my data? <span>&or;</span>
                 </p>
                 {iscollapse4 && (
                   <p className={dropdownStyle.description}>
-                    By designing software that fits the specific workflow and
-                    processes of the client, we can help streamline data entry
-                    and organization, making it easier to access and use. In
-                    addition, our custom software can be designed with robust
-                    security measures in place to protect sensitive data and
-                    prevent unauthorized access.
+                    We take the security and confidentiality of our clients’ data very seriously. We use industry-standard security protocols and technologies to ensure the protection of your data, and we are happy to discuss any specific concerns you may have about the security of your information.
                   </p>
                 )}
               </div>

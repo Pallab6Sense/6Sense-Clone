@@ -44,7 +44,7 @@
 }
 
 .middle p {
-    font-family: 'IBM Plex Sans Thai';
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -59,38 +59,24 @@
 }
 
 .fb {
-    background: #17494d;
-    color: white;
-    border: none;
-    padding-left: 12px;
-    padding-right: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-    text-align: center;
-    font-weight: 700;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
 }
 
 .in {
-    background: #17494d;
-    color: white;
-    border: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-    text-align: center;
-    font-weight: 700;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
 }
+
+.twitter {
+    display: flex;
+    justify-content: center;
+    /* padding-right: 20px; */
+}
+
+
 
 @media (max-width: 770px) {
     .container {
@@ -98,7 +84,7 @@
         justify-content: center;
         background: #f8f3ec;
         padding-top: 90px;
-        padding-bottom: 130px;
+        padding-bottom: 100px;
         padding-left: 15px;
         padding-right: 15px;
         flex-direction: column;
@@ -109,11 +95,12 @@
         justify-content: center;
         flex-direction: column;
         padding-right: 0px;
+        padding-bottom: 20px;
     }
 
-    
 
-    .image{
+
+    .image {
         /* width: 35%; */
         display: flex;
         justify-content: center;
@@ -125,7 +112,7 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 23px;
         /* or 177% */
 
@@ -141,6 +128,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
+        padding-top: 10px;
     }
 
     .middle {
@@ -151,15 +139,15 @@
     }
 
     .middle p {
-        font-family: 'IBM Plex Sans Thai';
+
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 29px;
         text-align: center;
-        
+
         /* Primary */
-        
+
         color: #17494D;
         padding-top: 7px;
     }
@@ -167,39 +155,27 @@
     .right {
         display: flex;
         justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
+
     .fb {
-        background: #17494d;
-        color: white;
-        border: none;
-        padding-left: 12px;
-        padding-right: 12px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        border-radius: 50%;
-        text-align: center;
-        font-weight: 700;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding-right: 20px;
     }
 
     .in {
-        background: #17494d;
-        color: white;
-        border: none;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        border-radius: 50%;
-        text-align: center;
-        font-weight: 700;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding-right: 20px;
     }
+
+    .twitter {
+        display: flex;
+        justify-content: center;
+        /* padding-right: 20px; */
+    }
+
 }

@@ -18,11 +18,11 @@ export default function CompanyDescription() {
         </div>
 
         <div className={style.brandLogo}>
-          <img className={style.image} src="breaking mars.png" alt="" />
-          <img className={style.image} src="charge on site.png" alt="" />
-          <img className={style.image} src="impromek.png" alt="" />
-          <img className={style.image} src="jawhargy.png" alt="" />
-          <img className={style.image} src="itcan.png" alt="" />
+          <img className={style.image} src="Group 1896 2.svg" alt="" />
+          <img className={style.image} src="Color logo 1 1.svg" alt="" />
+          <img className={style.image} src="Group 3041 1.svg" alt="" />
+          <img className={style.image} src="Group 1000002856.svg" alt="" />
+          <img className={style.image} src="Logo 476x204 1.svg" alt="" />
         </div>
 
         <div className={style.headingDiv2}>

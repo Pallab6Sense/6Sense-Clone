@@ -16,7 +16,7 @@
 }
 
 .advantages {
-    font-family: 'IBM Plex Sans Thai';
+
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -74,7 +74,7 @@
 }
 
 .head {
-    font-family: 'IBM Plex Sans Thai';
+
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -85,7 +85,7 @@
 }
 
 
-.head span{
+.head span {
     float: right;
 }
 
@@ -127,7 +127,7 @@
     }
 
     .advantages {
-        font-family: 'IBM Plex Sans Thai';
+
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -190,17 +190,17 @@
     }
 
     .head {
-        font-family: 'IBM Plex Sans Thai';
+
         font-style: normal;
         font-weight: 700;
         font-size: 17px;
         line-height: 25px;
         /* identical to box height */
         padding-bottom: 5px;
-        
-        
+
+
         /* Primary */
-        
+
         color: #17494D;
     }
 
