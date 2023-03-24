@@ -11,6 +11,7 @@ export default function Banner() {
               <h1 className={bannerStyle.heading2}>Software Development</h1>
               <p className="">By An Award Winning Agency</p>
             </div>
+
             <div className={bannerStyle.list}>
               <div className={bannerStyle.listItem}>
                 <img src="vector.png" alt="" />{' '}
@@ -60,41 +61,44 @@ export default function Banner() {
             />
           </div>
         </div>
-      </div>
-      <div className={bannerStyle.bottom}>
-        <div className={bannerStyle.bottomItems}>
-          <div className={bannerStyle.logo}>
-            <img src="vector-2.png" alt="" />
-          </div>
-          <div>
-            <h1>60+</h1>
-            <p>Successful</p>
-            <p>software projects</p>
-          </div>
-        </div>
-        <div className={bannerStyle.bottomItems}>
-          <div className={bannerStyle.bottomItemsFix}>
-            <div className={bannerStyle.fixlogo}>
-              <img src="Group-4.png" alt="" className={bannerStyle.fix} />
+        <div className={bannerStyle.bottom}>
+          {/* <div className={bannerStyle.mainItems}> */}
+            <div className={bannerStyle.bottomItems}>
+              <div className={bannerStyle.logo}>
+                <img src="vector-2.png" alt="" />
+              </div>
+              <div className={bannerStyle.bottomDesc}>
+                <h1>60+</h1>
+                <p>Successful</p>
+                <p>software projects</p>
+              </div>
             </div>
-            <div className={bannerStyle.bottomDesc}>
-              <h1>200+</h1>
-              <p>Happy Clients</p>
+
+            <div className={bannerStyle.bottomItems}>
+              <div className={bannerStyle.logo}>
+                <img src="Group-4.png" alt="" className={bannerStyle.fix} />
+              </div>
+              <div className={bannerStyle.bottomDesc}>
+                <h1>200+</h1>
+                <p>Happy Clients</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className={bannerStyle.bottomItems}>
-          <div className={bannerStyle.logo}>
-            <img src="Group-1-1.png" alt="" />
-          </div>
-          <div>
-            <h1>4.9</h1>
-            <p>Client Feedbacks</p>
-          </div>
-        </div>
-        <div className={bannerStyle.bottomlogo}>
-          <div className={bannerStyle.logo}>
-            <img src="image-42.png" alt="" />
+
+            <div className={bannerStyle.bottomItems}>
+              <div className={bannerStyle.logo}>
+                <img src="Group-1-1.png" alt="" />
+              </div>
+              <div className={bannerStyle.bottomDesc}>
+                <h1>4.9</h1>
+                <p>Client Feedbacks</p>
+              </div>
+            </div>
+          {/* </div> */}
+
+          <div className={bannerStyle.bottomItems}>
+            <div className={bannerStyle.logo}>
+              <img src="image-42.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
