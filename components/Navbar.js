@@ -10,10 +10,13 @@ export default function Navbar() {
   return (
     <>
       <div className={navStyle.container}>
+        <div className={navStyle.logo}>
+
         <img
           src="https://6sensehq.com/wp-content/uploads/2022/12/Charcoal.png"
           alt="6sense"
         />
+        </div>
         {/* <div className={navStyle.right}>
           <div className={navStyle.navigation}>
             <ul className="">
