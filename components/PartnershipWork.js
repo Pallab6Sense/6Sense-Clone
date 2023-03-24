@@ -1,18 +1,81 @@
 /* eslint-disable @next/next/no-img-element */
-// import axios from 'axios';
-import { useEffect, useState } from 'react';
 import style from '../styles/PartnershipWork.module.css';
-import Usefetch from '../Hooks/UseFetch';
-
 export default function PartnershipWork() {
-  // const [data, setData] = useState([]);
+  const data = [
+    {
+      id: 1,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/12/software-development-partner_2.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/11/1-3-1.png',
+      description: 'Baseball coaching marketplace.',
+    },
+    {
+      id: 2,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/11/Sale-Page-Post-%E2%80%93-Figma.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/11/1-3-1-1.png',
+      description: 'The Best EV Charging Solution Period.',
+    },
+    {
+      id: 3,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/11/Sale-Page-Post-%E2%80%93-Figma-1.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/11/1-3-1-2.png',
+      description: 'B2B sales automation tool with A.I.',
+    },
+    {
+      id: 4,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/11/Sale-Page-Post-%E2%80%93-Figma-2.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/11/1-3-1-9.png',
+      description: 'Simplest task management platform.',
+    },
+    {
+      id: 5,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/11/Sale-Page-Post-%E2%80%93-Figma-3.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/11/1-3-1-10.png',
+      description: 'A gold buying- selling marketplace.',
+    },
+    {
+      id: 6,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/11/Sale-Page-Post-%E2%80%93-Figma-4.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/11/1-3-1-11.png',
+      description: 'An one stop wholeselling marketplace.',
+    },
+    {
+      id: 7,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/12/software-development-partner_7-1.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/12/1-3-1-5.png',
+      description: 'Personalized media sharing platform.',
+    },
+    {
+      id: 8,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/12/software-development-partner_7-2.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/12/1-3-1-6.png',
+      description: 'Healthcare budget management.',
+    },
+    {
+      id: 9,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/12/software-development-partner_7-3.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/12/1-3-1-4.png',
+      description: 'Accounting for Small businesses. ',
+    },
+    {
+      id: 10,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/12/software-development-partner_7-4-1.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/12/1-3-1-7.png',
+      description: 'Identifying emotions via voice analysis.',
+    },
+    {
+      id: 11,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/12/software-development-partner_7-6.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/12/1-3-1-9.png',
+      description: 'Effortlessly share audio recordings.',
+    },
+    {
+      id: 12,
+      img: 'https://6sensehq.com/wp-content/uploads/2022/12/software-development-partner_7-5.png',
+      logo: 'https://6sensehq.com/wp-content/uploads/2022/12/1-3-1-8.png',
+      description: 'All-in-one Quran app for daily guidance.',
+    },
+  ];
 
-  // useEffect(() => {
-  //   fetch(`http://localhost:8000/works`)
-  //     .then((response) => response.json())
-  //     .then((actualData) => setData(actualData));
-  // }, []);
-  const { data: data } = Usefetch('http://localhost:8000/works');
   return (
     <>
       <div className={style.container}>
