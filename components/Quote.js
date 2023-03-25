@@ -107,7 +107,7 @@ export default function Quote() {
         </div>
 
         <div className={style.mobileReview}>
-          <img src="image-42 (1).png" alt="" className="" />
+          <img src="image-42 (1).png" alt="" className={style.reviewImg}/>
           <img src="review.png" alt="" />
           <div className={style.button}>
           <button className={style.btn}>Visit Clutch</button>

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import style from '../styles/PartnershipWork.module.css';
-export default function PartnershipWork() {
+function getData(){
   const data = [
     {
       id: 1,
@@ -75,6 +75,10 @@ export default function PartnershipWork() {
       description: 'All-in-one Quran app for daily guidance.',
     },
   ];
+  return data;
+}
+export default function PartnershipWork() {
+  const data = getData();
 
   return (
     <>

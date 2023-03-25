@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import style from '../styles/MobileApp.module.css';
-export default function MobileApp() {
-  
+
+const getData = () => {
   const data = [
     {
       id: 1,
@@ -64,7 +64,12 @@ export default function MobileApp() {
       description: 'Venus',
     },
   ];
-  
+  return data;
+};
+
+export default function MobileApp() {
+  const data = getData();
+
   return (
     <>
       <div className={style.container}>

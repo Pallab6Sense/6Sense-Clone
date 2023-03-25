@@ -17,7 +17,7 @@ export default function DropDown() {
     }
   }, [iscollapse]);
 
-  let handleClick1; 
+  let handleClick1;
 
   handleClick1 = useCallback(() => {
     if (iscollapse1 == false) {
@@ -56,9 +56,9 @@ export default function DropDown() {
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick}>
-                  Cost Savings By 50% <span>&or;</span>
+                  Cost Savings By 50% {!iscollapse ? <span>&or;</span> : null}
                 </p>
-                {iscollapse && (
+                {iscollapse ? (
                   <p className={dropdownStyle.description}>
                     By working with our custom software company, our clients can
                     save at least 50% on their software development costs. Our
@@ -69,16 +69,16 @@ export default function DropDown() {
                     that fits their workflow and processes, helping to
                     streamline operations and improve efficiency.
                   </p>
-                )}
+                ) : null}
               </div>
             </div>
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick1}>
                   Ability to integrate with existing systems and processes{' '}
-                  <span>&or;</span>
+                  {!iscollapse1 ? <span>&or;</span> : null}
                 </p>
-                {iscollapse1 && (
+                {iscollapse1 ? (
                   <p className={dropdownStyle.description}>
                     We have the ability to seamlessly integrate with our
                     clients’ existing systems and processes. This means that our
@@ -88,15 +88,16 @@ export default function DropDown() {
                     also helps to minimize disruptions to their business
                     operations..
                   </p>
-                )}
+                ) : null}
               </div>
             </div>
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick2}>
-                  Improved data management <span>&or;</span>
+                  Improved data management{' '}
+                  {!iscollapse2 ? <span>&or;</span> : null}
                 </p>
-                {iscollapse2 && (
+                {iscollapse2 ? (
                   <p className={dropdownStyle.description}>
                     By designing software that fits the specific workflow and
                     processes of the client, we can help streamline data entry
@@ -105,7 +106,7 @@ export default function DropDown() {
                     security measures in place to protect sensitive data and
                     prevent unauthorized access.
                   </p>
-                )}
+                ) : null}
               </div>
             </div>
           </div>

@@ -344,7 +344,7 @@ export default function CompanyDescription() {
           </div>
         </div>
 
-        <hr />
+        <hr className={style.divider} />
       </div>
       <div className={style.zindexBottom}>
         <div className={style.bottomItems}>

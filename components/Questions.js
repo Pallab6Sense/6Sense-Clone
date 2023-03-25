@@ -80,62 +80,89 @@ export default function Questions() {
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick}>
-                What sets your software development company apart from competitors? <span>&or;</span>
+                  What sets your software development company apart from
+                  competitors? {!iscollapse ? <span>&or;</span> : null}
                 </p>
-                {iscollapse && (
+                {iscollapse ? (
                   <p className={dropdownStyle.description}>
-                    Our team has extensive experience in custom software development and a strong track record of successfully delivering projects for businesses of all sizes. We also offer a range of services including web development, managed delivery, dedicated team options, and UX design, allowing us to be a one-stop shop for all of your software development needs.
+                    Our team has extensive experience in custom software
+                    development and a strong track record of successfully
+                    delivering projects for businesses of all sizes. We also
+                    offer a range of services including web development, managed
+                    delivery, dedicated team options, and UX design, allowing us
+                    to be a one-stop shop for all of your software development
+                    needs.
                   </p>
-                )}
+                ):null}
               </div>
             </div>
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick1}>
-                Do you offer any guarantees for the quality of your work?{' '}
-                  <span>&or;</span>
+                  Do you offer any guarantees for the quality of your work?{' '}
+                  {!iscollapse1 ? <span>&or;</span> : null}
                 </p>
-                {iscollapse1 && (
+                {iscollapse1 ? (
                   <p className={dropdownStyle.description}>
-                    Yes, we stand behind the quality of our work and offer a satisfaction guarantee for all of our projects. If you are not completely satisfied with the final product, we will work with you to make any necessary revisions until you are happy with the results.
+                    Yes, we stand behind the quality of our work and offer a
+                    satisfaction guarantee for all of our projects. If you are
+                    not completely satisfied with the final product, we will
+                    work with you to make any necessary revisions until you are
+                    happy with the results.
                   </p>
-                )}
+                ):null}
               </div>
             </div>
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick2}>
-                Can you accommodate businesses of any size? <span>&or;</span>
+                  Can you accommodate businesses of any size?{' '}
+                  {!iscollapse2 ? <span>&or;</span> : null}
                 </p>
-                {iscollapse2 && (
+                {iscollapse2 ? (
                   <p className={dropdownStyle.description}>
-                    Yes, we work with businesses of all sizes and have the resources and experience to handle projects of any scope. Whether you are a small startup or a large enterprise, we have the expertise to deliver custom software solutions that meet your specific needs.
+                    Yes, we work with businesses of all sizes and have the
+                    resources and experience to handle projects of any scope.
+                    Whether you are a small startup or a large enterprise, we
+                    have the expertise to deliver custom software solutions that
+                    meet your specific needs.
                   </p>
-                )}
+                ):null}
               </div>
             </div>
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick3}>
-                Do you offer ongoing support and maintenance for your software products? <span>&or;</span>
+                  Do you offer ongoing support and maintenance for your software
+                  products? {!iscollapse3 ? <span>&or;</span> : null}
                 </p>
-                {iscollapse3 && (
+                {iscollapse3 ? (
                   <p className={dropdownStyle.description}>
-                   Yes, we offer ongoing support and maintenance for all of our software products to ensure that they are running smoothly and meeting the needs of your business. We also offer managed delivery services to handle the ongoing maintenance and updates for your software, allowing you to focus on running your business.
+                    Yes, we offer ongoing support and maintenance for all of our
+                    software products to ensure that they are running smoothly
+                    and meeting the needs of your business. We also offer
+                    managed delivery services to handle the ongoing maintenance
+                    and updates for your software, allowing you to focus on
+                    running your business.
                   </p>
-                )}
+                ):null}
               </div>
             </div>
             <div className={dropdownStyle.collapseItem}>
               <div className={dropdownStyle.items}>
                 <p className={dropdownStyle.head} onClick={handleClick4}>
-                How do you ensure the security and confidentiality of my data? <span>&or;</span>
+                  How do you ensure the security and confidentiality of my data?{' '}
+                  {!iscollapse4 ? <span>&or;</span> : null}
                 </p>
-                {iscollapse4 && (
+                {iscollapse4 ? (
                   <p className={dropdownStyle.description}>
-                    We take the security and confidentiality of our clients’ data very seriously. We use industry-standard security protocols and technologies to ensure the protection of your data, and we are happy to discuss any specific concerns you may have about the security of your information.
+                    We take the security and confidentiality of our clients’
+                    data very seriously. We use industry-standard security
+                    protocols and technologies to ensure the protection of your
+                    data, and we are happy to discuss any specific concerns you
+                    may have about the security of your information.
                   </p>
-                )}
+                ):null}
               </div>
             </div>
           </div>
