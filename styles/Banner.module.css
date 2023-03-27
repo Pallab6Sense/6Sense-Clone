@@ -1,8 +1,8 @@
 .container {
   background-color: #f8f4ec;
   padding-top: 45px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 8%;
+  padding-right: 8%;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
