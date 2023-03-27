@@ -790,7 +790,7 @@
     padding-left: 90px;
     padding-right: 90px;
     padding-bottom: 10px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
   }
@@ -837,7 +837,6 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 52px;
-    /* or 109% */
 
     text-transform: capitalize;
     color: #17494d;
@@ -848,8 +847,6 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 52px;
-    /* or 109% */
-
     text-transform: capitalize;
     color: #ba8d46;
   }
@@ -859,16 +856,13 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
-    /* identical to box height, or 214% */
 
     text-transform: capitalize;
 
-    /* Primary */
 
     color: #17494d;
     margin-top: 10px;
     text-align: left;
-    /* margin-left: -140px; */
   }
 
   .list {
@@ -879,7 +873,6 @@
 
   .listItem {
     display: flex;
-    /* justify-content: center; */
     margin-top: 15px;
     font-size: 17px;
   }
@@ -895,7 +888,6 @@
   .btnDiv {
     display: flex;
     justify-content: flex-start;
-    /* margin-right: 30px; */
     margin-top: 20px;
   }
 
@@ -907,8 +899,6 @@
     padding: 15px 120px 15px 120px;
     text-decoration: none;
     border: none;
-    /* margin-right: 120px; */
-    /* margin-left: 100px; */
     margin-top: 20px;
     width: fit-content;
     font-weight: bold;
