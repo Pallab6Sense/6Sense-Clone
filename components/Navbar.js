@@ -17,17 +17,7 @@ export default function Navbar() {
           alt="6sense"
         />
         </div>
-        {/* <div className={navStyle.right}>
-          <div className={navStyle.navigation}>
-            <ul className="">
-              <li className="">Case Study</li>
-              <div className={navStyle.dropDown}>
-                <li className="">Our Services </li>
-              </div>
-              <li className="">Our Process</li>
-            </ul>
-          </div> */}
-
+        
         <div class={navStyle.navbar}>
           <div className={navStyle.navigator}>
           <a href="#home"> Case Study</a>
