@@ -73,7 +73,7 @@ export default function DropDown() {
                 onClick={handleClick}
                 expandIcon={!iscollapse ? <ExpandMoreIcon /> : null}
                 aria-controls="panel1bh-content"
-                id="panel1bh-header"
+                id="panel1bh-header"   
               >
                 <Typography className={dropdownStyle.head}>
                   Cost Savings By 50%
