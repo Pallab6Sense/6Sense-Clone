@@ -65,64 +65,82 @@ export default function DropDown() {
         <div className={dropdownStyle.collapse}>
           <div className={dropdownStyle.collapseDiv}>
             <Accordion
+              className={dropdownStyle.accordion}
               expanded={iscollapse}
-              onChange={handleChange('panel1')}
             >
-              <AccordionSummary className={dropdownStyle.items}
+              <AccordionSummary
+                className={dropdownStyle.items}
                 onClick={handleClick}
                 expandIcon={!iscollapse ? <ExpandMoreIcon /> : null}
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
               >
                 <Typography className={dropdownStyle.head}>
-                Cost Savings By 50%
+                  Cost Savings By 50%
                 </Typography>
               </AccordionSummary>
-              <AccordionDetails >
+              <AccordionDetails>
                 <Typography className={dropdownStyle.description}>
-                By working with our custom software company, our clients can save at least 50% on their software development costs. Our personalized solutions are designed specifically for the needs and goals of each client, ensuring that they get the most value for their investment. We work closely with our clients to understand their unique needs and create software that fits their workflow and processes, helping to streamline operations and improve efficiency.
+                  By working with our custom software company, our clients can
+                  save at least 50% on their software development costs. Our
+                  personalized solutions are designed specifically for the needs
+                  and goals of each client, ensuring that they get the most
+                  value for their investment. We work closely with our clients
+                  to understand their unique needs and create software that fits
+                  their workflow and processes, helping to streamline operations
+                  and improve efficiency.
                 </Typography>
               </AccordionDetails>
             </Accordion>
             <Accordion
-              expanded={expanded === 'panel2'}
-              onChange={handleChange('panel2')}
+              className={dropdownStyle.accordion}
+              expanded={iscollapse1}
             >
-              <AccordionSummary className={dropdownStyle.items}
+              <AccordionSummary
+                className={dropdownStyle.items}
                 onClick={handleClick1}
                 expandIcon={!iscollapse1 ? <ExpandMoreIcon /> : null}
                 aria-controls="panel2bh-content"
                 id="panel2bh-header"
               >
-                
                 <Typography className={dropdownStyle.head}>
-                Ability to integrate with existing systems and processes
+                  Ability to integrate with existing systems and processes
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={dropdownStyle.description}>
-                We have the ability to seamlessly integrate with our clients’ existing systems and processes. This means that our software can work alongside their current technology and platforms, rather than requiring them to completely overhaul their systems. This not only saves time and resources, but also helps to minimize disruptions to their business operations.
+                  We have the ability to seamlessly integrate with our clients’
+                  existing systems and processes. This means that our software
+                  can work alongside their current technology and platforms,
+                  rather than requiring them to completely overhaul their
+                  systems. This not only saves time and resources, but also
+                  helps to minimize disruptions to their business operations.
                 </Typography>
               </AccordionDetails>
             </Accordion>
             <Accordion
-              expanded={expanded === 'panel3'}
-              onChange={handleChange('panel3')}
+              className={dropdownStyle.accordion}
+              expanded={iscollapse2}
             >
-              <AccordionSummary className={dropdownStyle.items}
-              onClick={handleClick2}
-              expandIcon={!iscollapse2 ? <ExpandMoreIcon /> : null}
+              <AccordionSummary
+                className={dropdownStyle.items}
+                onClick={handleClick2}
+                expandIcon={!iscollapse2 ? <ExpandMoreIcon /> : null}
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
               >
-              
                 <Typography className={dropdownStyle.head}>
-                Improved data management
+                  Improved data management
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={dropdownStyle.description}>
-                By designing software that fits the specific workflow and processes of the client, we can help streamline data entry and organization, making it easier to access and use. In addition, our custom software can be designed with robust security measures in place to protect sensitive data and prevent unauthorized access.
+                  By designing software that fits the specific workflow and
+                  processes of the client, we can help streamline data entry and
+                  organization, making it easier to access and use. In addition,
+                  our custom software can be designed with robust security
+                  measures in place to protect sensitive data and prevent
+                  unauthorized access.
                 </Typography>
               </AccordionDetails>
             </Accordion>
