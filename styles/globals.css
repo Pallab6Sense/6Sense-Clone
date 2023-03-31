@@ -11,3 +11,35 @@ html, body{
 header{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
+
+.items {
+  text-align: justify;
+  padding: 10px;
+  border-top: 2px solid #17494d;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+
+
+.head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #17494d;
+  width: 100%;
+  cursor: pointer;
+}
+
+.head span {
+  float: right;
+}
+
+.description {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+}

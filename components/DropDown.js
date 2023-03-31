@@ -42,11 +42,6 @@ export default function DropDown() {
     }
   }, [iscollapse2]);
 
-  const [expanded, setExpanded] = useState(false);
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
 
   return (
     <>
@@ -64,23 +59,23 @@ export default function DropDown() {
 
         <div className={dropdownStyle.collapse}>
           <div className={dropdownStyle.collapseDiv}>
-            <Accordion
+            <Accordion 
               className={dropdownStyle.accordion}
               expanded={iscollapse}
             >
-              <AccordionSummary
-                className={dropdownStyle.items}
+              <AccordionSummary expandIconWrapper
+                className="items"
                 onClick={handleClick}
                 expandIcon={!iscollapse ? <ExpandMoreIcon /> : null}
                 aria-controls="panel1bh-content"
-                id="panel1bh-header"   
+                id="panel1bh-header"
               >
-                <Typography className={dropdownStyle.head}>
+                <Typography className="head">
                   Cost Savings By 50%
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className={dropdownStyle.description}>
+                <Typography className="description">
                   By working with our custom software company, our clients can
                   save at least 50% on their software development costs. Our
                   personalized solutions are designed specifically for the needs
@@ -97,18 +92,18 @@ export default function DropDown() {
               expanded={iscollapse1}
             >
               <AccordionSummary
-                className={dropdownStyle.items}
+                className="items"
                 onClick={handleClick1}
                 expandIcon={!iscollapse1 ? <ExpandMoreIcon /> : null}
                 aria-controls="panel2bh-content"
                 id="panel2bh-header"
               >
-                <Typography className={dropdownStyle.head}>
+                <Typography className="head">
                   Ability to integrate with existing systems and processes
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className={dropdownStyle.description}>
+                <Typography className="description">
                   We have the ability to seamlessly integrate with our clients’
                   existing systems and processes. This means that our software
                   can work alongside their current technology and platforms,
@@ -123,18 +118,18 @@ export default function DropDown() {
               expanded={iscollapse2}
             >
               <AccordionSummary
-                className={dropdownStyle.items}
+                className="items"
                 onClick={handleClick2}
                 expandIcon={!iscollapse2 ? <ExpandMoreIcon /> : null}
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
               >
-                <Typography className={dropdownStyle.head}>
+                <Typography className="head">
                   Improved data management
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className={dropdownStyle.description}>
+                <Typography className="description">
                   By designing software that fits the specific workflow and
                   processes of the client, we can help streamline data entry and
                   organization, making it easier to access and use. In addition,
