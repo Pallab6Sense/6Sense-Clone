@@ -87,19 +87,19 @@ export default function Questions() {
               className={dropdownStyle.accordion}
             >
               <AccordionSummary
-                className={dropdownStyle.items}
+                className="items"
                 onClick={handleClick}
                 expandIcon={!iscollapse ? <ExpandMoreIcon /> : null}
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
               >
-                <Typography className={dropdownStyle.head}>
+                <Typography className="head">
                   What sets your software development company apart from
                   competitors?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className={dropdownStyle.description}>
+                <Typography className="description">
                   Our team has extensive experience in custom software
                   development and a strong track record of successfully
                   delivering projects for businesses of all sizes. We also offer
@@ -115,18 +115,18 @@ export default function Questions() {
               className={dropdownStyle.accordion}
             >
               <AccordionSummary
-                className={dropdownStyle.items}
+                className="items"
                 onClick={handleClick1}
                 expandIcon={!iscollapse1 ? <ExpandMoreIcon /> : null}
                 aria-controls="panel2bh-content"
                 id="panel2bh-header"
               >
-                <Typography className={dropdownStyle.head}>
+                <Typography className="head">
                   Do you offer any guarantees for the quality of your work?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className={dropdownStyle.description}>
+                <Typography className="description">
                   Yes, we stand behind the quality of our work and offer a
                   satisfaction guarantee for all of our projects. If you are not
                   completely satisfied with the final product, we will work with
@@ -140,18 +140,18 @@ export default function Questions() {
               className={dropdownStyle.accordion}
             >
               <AccordionSummary
-                className={dropdownStyle.items}
+                className="items"
                 onClick={handleClick2}
                 expandIcon={!iscollapse2 ? <ExpandMoreIcon /> : null}
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
               >
-                <Typography className={dropdownStyle.head}>
+                <Typography className="head">
                   Can you accommodate businesses of any size?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className={dropdownStyle.description}>
+                <Typography className="description">
                   Yes, we work with businesses of all sizes and have the
                   resources and experience to handle projects of any scope.
                   Whether you are a small startup or a large enterprise, we have
@@ -165,19 +165,19 @@ export default function Questions() {
               className={dropdownStyle.accordion}
             >
               <AccordionSummary
-                className={dropdownStyle.items}
+                className="items"
                 onClick={handleClick3}
                 expandIcon={!iscollapse3 ? <ExpandMoreIcon /> : null}
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
               >
-                <Typography className={dropdownStyle.head}>
+                <Typography className="head">
                   Do you offer ongoing support and maintenance for your software
                   products?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className={dropdownStyle.description}>
+                <Typography className="description">
                   Yes, we offer ongoing support and maintenance for all of our
                   software products to ensure that they are running smoothly and
                   meeting the needs of your business. We also offer managed
@@ -192,18 +192,18 @@ export default function Questions() {
               className={dropdownStyle.accordion}
             >
               <AccordionSummary
-                className={dropdownStyle.items}
+                className="items"
                 onClick={handleClick4}
                 expandIcon={!iscollapse4 ? <ExpandMoreIcon /> : null}
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
               >
-                <Typography className={dropdownStyle.head}>
+                <Typography className="head">
                   How do you ensure the security and confidentiality of my data?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className={dropdownStyle.description}>
+                <Typography className="description">
                   We take the security and confidentiality of our clients’ data
                   very seriously. We use industry-standard security protocols
                   and technologies to ensure the protection of your data, and we
